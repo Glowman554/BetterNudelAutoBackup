@@ -29,6 +29,7 @@ public class LoadBackupCommand implements Command
 			
 			FileUtils.writeFile("perms.json", json.serialize(root.get("perms")));			
 			FileUtils.writeFile("science.json", json.serialize(root.get("science")));
+			FileUtils.writeFile("sciencev2.json", json.serialize(root.get("sciencev2")));
 
 			System.exit(-1);
 		}

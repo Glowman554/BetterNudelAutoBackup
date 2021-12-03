@@ -32,10 +32,12 @@ public class Main implements Plugin
 	
 							JsonNode perms_root = json.parse(FileUtils.readFile("perms.json"));
 							JsonNode science_root = json.parse(FileUtils.readFile("science.json"));
+							JsonNode sciencev2_root = json.parse(FileUtils.readFile("sciencev2.json"));
 							
 							JsonNode root = JsonNode.object();
 							root.set("perms", perms_root);
 							root.set("science", science_root);
+							root.set("sciencev2", sciencev2_root);
 							
 							FileUtils.writeFile(file, json.serialize(root));
 							
